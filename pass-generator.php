@@ -26,17 +26,17 @@
 		$number = '0123456789';
 		$symbols = '$*?!-';
 
-		$use_lower = true;
-		$use_upper = true;
-		$use_numbers = true;
-		$use_symbols = true;
+		$useLower = true;
+		$useUpper = true;
+		$useNumbers = true;
+		$useSymbols = true;
 
 		$chars = '';
 
-		if($use_lower === true)   { $chars .= $lower; }
-		if($use_upper === true)   { $chars .= $upper; }
-		if($use_numbers === true) { $chars .= $number; }
-		if($use_symbols === true) { $chars .= $symbols; }
+		if($useLower === true)   { $chars .= $lower; }
+		if($useUpper === true)   { $chars .= $upper; }
+		if($useNumbers === true) { $chars .= $number; }
+		if($useSymbols === true) { $chars .= $symbols; }
 
 		return random_string($length, $chars);	
 	}
